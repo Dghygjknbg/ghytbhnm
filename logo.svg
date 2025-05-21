@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1526.39395 1526.39122">
+  <defs>
+    <!-- Градиенты -->
+    <linearGradient id="purpleGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#4a00ff;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#8e2bff;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#6a00b8;stop-opacity:1" />
+    </linearGradient>
+
+    <radialGradient id="pinkGradient" cx="50%" cy="50%" r="65%" fx="50%" fy="50%">
+      <stop offset="0%" style="stop-color:#ff00f5;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#db17b9;stop-opacity:0.8" />
+    </radialGradient>
+
+    <!-- Эффекты свечения -->
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="4" result="coloredBlur"/>
+      <feMerge>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+
+  <!-- Основная фигура с градиентом -->
+  <path d="m68.6991,68.99055l.0051-.0051c91.6039-91.599,241.4911-91.599,333.098,0l361.2512,361.2542,333.103,333.1034,361.2512,361.2457c91.5988,91.6089,91.5988,241.4961,0,333.1l-.0051.0033c-91.6039,91.5989-241.4946,91.5989-333.0985,0l-361.2506-361.2458-361.2461,361.2458c-91.6069,91.5989-241.4941,91.5989-333.098,0l-.0051-.0033c-91.5988-91.5989-91.5988-241.4911,0-333.1l361.2456-361.2457L68.6991,402.08885c-91.5988-91.6039-91.5988-241.4961,0-333.0983" 
+        style="fill: url(#purpleGradient); filter: url(#glow);"/>
+
+  <!-- Акцентная фигура с 3D-эффектом -->
+  <path d="m1457.4076,68.99055c91.9818,91.9806,91.9818,241.1109,0,333.0932-91.9859,91.9805-241.1177,91.9805-333.0985,0-91.9823-91.9823-91.9823-241.1126,0-333.0932,91.9808-91.9874,241.1126-91.9874,333.0985,0" 
+        style="fill: url(#pinkGradient); opacity: 0.9; mix-blend-mode: screen;"/>
+</svg>
